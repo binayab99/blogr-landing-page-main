@@ -1,0 +1,16 @@
+@use '../util/' as *;
+
+.design {
+  background: no-repeat top rem(50) right rem(-280) / auto
+    url("/images/illustration-editor-desktop.svg");
+  padding: rem(40);
+
+  > h2 {
+    text-align: center;
+  }
+
+  .text-container {
+    width: 50%;
+    padding: rem(40);
+  }
+}

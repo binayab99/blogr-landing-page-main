@@ -1,0 +1,53 @@
+@use "../util" as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-ubuntu);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: inherit;
+  padding: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: inherit;
+  padding: inherit;
+}
+
+// img {
+//   width: auto;
+//   height: auto;
+// }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(30);
+  font-weight: 600;
+}
