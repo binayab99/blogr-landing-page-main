@@ -1,9 +1,17 @@
 @use '../util/' as *;
 
 .design {
-  background: no-repeat top rem(50) right rem(-280) / auto
-    url("/images/illustration-editor-desktop.svg");
-  padding: rem(40);
+  // background: no-repeat top rem(50) right rem(-280) / auto
+  //   url("/images/illustration-editor-desktop.svg");
+  background: url(/images/illustration-editor-desktop.svg);
+  background-position: top rem(20) right rem(-200);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  padding: rem(100) rem(80);
+
+  p {
+    color: var(--very-dark-grayish-blue);
+  }
 
   > h2 {
     text-align: center;
@@ -12,5 +20,6 @@
   .text-container {
     width: 50%;
     padding: rem(40);
+    max-width: rem(600);
   }
 }

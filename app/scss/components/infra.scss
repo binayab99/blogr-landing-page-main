@@ -1,0 +1,9 @@
+@use "../util" as *;
+
+.infra {
+  //   color: var(--white);
+
+  &__text {
+    width: 50%;
+  }
+}

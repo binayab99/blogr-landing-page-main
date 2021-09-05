@@ -32,7 +32,12 @@
     z-index: -1;
   }
 
+  > h1 {
+    color: var(--white);
+  }
+
   .subtitle {
+    font-family: var(--font-overpass);
     margin-top: rem(25);
     margin-bottom: rem(45);
     font-size: rem(18);

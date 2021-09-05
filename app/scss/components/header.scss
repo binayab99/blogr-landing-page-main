@@ -25,8 +25,12 @@
     margin-right: auto;
 
     > ul {
-      > h4:hover {
-        text-decoration: underline;
+      > h4 {
+        color: var(--white);
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       > li {
