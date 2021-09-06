@@ -30,6 +30,11 @@
     height: 100%;
     background: no-repeat center left / 150% url("/images/bg-pattern-intro.svg");
     z-index: -1;
+
+    @include breakpoint-down(medium) {
+      background: no-repeat bottom rem(-250) center / 150%
+        url("/images/bg-pattern-intro.svg");
+    }
   }
 
   > h1 {

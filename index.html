@@ -19,6 +19,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        display: none;
         font-size: 11px;
         text-align: center;
       }
@@ -64,9 +65,9 @@
               >Connect <img src="/images/icon-arrow-light.svg" alt=""
             /></a>
           </h4>
-          <li>Contact</li>
-          <li>Newsletter</li>
-          <li>LinkedIn</li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
         </ul>
       </nav>
 
@@ -91,6 +92,7 @@
 
     <section class="design">
       <h2>Designed for the future</h2>
+      <div class="design__blank"></div>
       <div class="text-container">
         <h3>Introducing an extensible editor</h3>
         <p>
@@ -111,16 +113,18 @@
       </div>
     </section>
 
-    <div class="infra">
-      <div class="infra__blank"></div>
-      <div class="infra__text">
-        <h2>State of the Art Infrastructure</h2>
-        <p>
-          With reliability and speed in mind, worldwide data centers provide the
-          backbone for ultra-fast connectivity. This ensures your site will load
-          instantly, no matter where your readers are, keeping your site
-          competitive.
-        </p>
+    <div class="wrapper">
+      <div class="infra">
+        <div class="infra__blank"></div>
+        <div class="infra__text">
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -145,43 +149,40 @@
     </section>
 
     <footer class="footer">
-      <div class="logo">Blogr</div>
-      <div class="col1">
-        <ul>
-          Product &#x25BF;
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Marketplace</li>
-          <li>Features</li>
-          <li>Integrations</li>
-        </ul>
-      </div>
+      <div class="logo"><img src="/images/logo.svg" alt="Blogr" /></div>
 
-      <div class="col2">
+      <nav class="nav">
         <ul>
-          Company &#x25BF;
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
+          <h4>Product</h4>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
         </ul>
-      </div>
 
-      <div class="col3">
         <ul>
-          Connect &#x25BF;
-          <li>Contact</li>
-          <li>Newsletter</li>
-          <li>LinkedIn</li>
+          <h4>Company</h4>
+          <li><a href="#">About</a></li>
+          <li>T<a href="#">eam</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
-      </div>
+
+        <ul>
+          <h4>Connect</h4>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </nav>
     </footer>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Binaya Bajracharya</a>.
     </div>
     <script src="dist/script.js"></script>
   </body>

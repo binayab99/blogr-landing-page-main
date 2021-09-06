@@ -1,0 +1,46 @@
+@use "../util" as *;
+
+.footer {
+  background: var(--very-dark-black-blue);
+  color: var(--white);
+  border-top-right-radius: rem(100);
+  display: grid;
+  grid-template-columns: rem(200) auto;
+  padding: rem(80);
+
+  .nav {
+    display: flex;
+    gap: rem(200);
+
+    > ul {
+      & > h4 {
+        margin-top: 0;
+      }
+
+      & > li {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+
+  h4 {
+    color: var(--white);
+  }
+}
+
+@include breakpoint-down(medium) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2fr;
+    text-align: center;
+
+    .logo {
+      max-height: rem(50);
+    }
+
+    .nav {
+      flex-direction: column;
+      gap: rem(30);
+    }
+  }
+}
