@@ -10,9 +10,15 @@
   &::before {
     content: "";
     position: absolute;
-    inset: 0;
+    // inset: 0;
+    top: 0;
+    left: rem(100);
+    right: 0;
+    bottom: 0;
     background: url("/images/illustration-phones.svg");
+    // background-position: center rem(10) left rem(60);
     background-repeat: no-repeat;
+    z-index: -5;
   }
 
   @include breakpoint-down(medium) {
@@ -32,7 +38,7 @@
   border-top-right-radius: rem(100);
   border-bottom-left-radius: rem(100);
   overflow: hidden;
-  z-index: -2;
+  z-index: -10;
 
   @include breakpoint-down(medium) {
     display: flex;
@@ -47,7 +53,7 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom rem(-70) left rem(-220);
-    z-index: -1;
+    z-index: -8;
 
     @include breakpoint-down(medium) {
       background-size: contain;
