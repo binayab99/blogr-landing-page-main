@@ -21,25 +21,72 @@
 
   .nav {
     display: flex;
-    gap: 2rem;
+    gap: rem(40);
     margin-right: auto;
 
-    > ul {
+    button {
+      display: inline-block;
+      color: var(--white);
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
       > h4 {
         color: var(--white);
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
+    }
+
+    ul {
+      color: black;
+      background: var(--white);
+      padding: rem(30) rem(20);
+      border-radius: rem(5);
 
       > li {
-        display: none;
-      }
+        min-width: rem(100);
 
-      > li:hover {
-        font-weight: 700;
+        &:not(:last-of-type) {
+          margin-bottom: rem(10);
+        }
+
+        &:hover {
+          font-weight: 700;
+        }
       }
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+      &-content {
+        // display: none;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        left: rem(-20);
+        z-index: 5;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+
+    .dropdown:hover .dropdown-content {
+      // display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  #login {
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      scale: 1.2;
     }
   }
 
@@ -48,6 +95,7 @@
     background: var(--white);
     padding: rem(15) rem(40);
     border-radius: rem(30);
+    transition: all 0.5s ease-in-out;
 
     &:hover {
       background: hsla(0, 0%, 100%, 0.3);
